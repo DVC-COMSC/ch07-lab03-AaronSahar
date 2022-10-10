@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "1 \r\n2\r\n3\r\n4\r\n5",
+      "output": "4[\\w, \" \"]*5[\\w,\" \"]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "10\r\n15\r\n20\r\n25\r\n30",
+      "output": "[\\w,\" \"]*25[\\w,\" \"]*30[\\w, \" \"]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
